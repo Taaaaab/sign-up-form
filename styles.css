@@ -1,26 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    color: black;
+    background-color: #EAEDF0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 .container {
+    margin-left: 380px;
+}
+
+.form-body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    width: 700px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+.form-row {
+    color: #5D6063;
+    font-weight: bold;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #FFFFFF;
+    background-color: rgb(103, 129, 52);
+  
+    border: none;
+    border-radius: 3px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(130, 162, 67);
+}
+
+button:active {
+    background-color: rgb(87, 109, 44);
+}
+
+.card-container {
     display: flex;
-    flex-direction: column;
+    justify-content: left;
 }
 
-.header {
-    
-    font-family: 'Abril Fatface', cursive;
-    font-size: 35px;
-    color: black;
-}
-
-img.meerkat {
-    width: 300px;
+.card-body{
     position: relative;
 }
 
-img.logo {
-    width: 200px;
-    position: absolute 10px;
+.card-meerkat {
+    position: absolute;
+    max-width: 360px;
+}
+
+.card-logo {
+    position: absolute;
+    max-width: 100px;
+    top: 150px;
+    left: 30px;
+}
+
+.credits {
+    position: absolute;
+    left: 80px;
+    bottom: -510px;
+    white-space: nowrap;
+    color: #CCC;
+    font-size: 12px;
+    
 }

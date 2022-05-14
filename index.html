@@ -8,38 +8,43 @@
     <link rel="stylesheet" href="styles.css ">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="sidebar">
-        <img class="meerkat" src="mk.jpg" alt="meerkat">
-        <img class="logo" src="logo.png" alt="africa">
-        <div>Photo by Nicolas DC on Unsplash</div>
+    <div class="card-container">
+        <div class="card-body">
+            <img class="card-meerkat" src="mk.jpg" alt="meerkat">
+            <div class="card-heading">MeerkatsOvernight.com</div>
+            <img class="card-logo" src="logo.png" alt="africa">
+            <div class="credits">Photo by Nicolas DC on Unsplash</div>
+        </div>         
     </div>
     <div class="container">
     <header class="form-header">
         <h1>MeerkatsOverNight.com is the easiest and fastest way to get a real Meerkat. Sign-up now to get started.
         </h1>        
     </header>
-    <form action="" method="get" class="form-body">
+    <form action="" method="get">
+        <div class="form-body">
         <div class="form-row">
-            <label for="first-name">First Name</label>
+            <label for="first-name">FIRST NAME</label>
             <input id="first-name" name="first-name" type="text">
-            <label for="last-name">Last Name</label>
+            <label for="last-name">LAST NAME</label>
             <input id="last-name" name="last-name" type="text">
         </div>
         <div class="form-row">
-            <label for="email-address">Email</label>
+            <label for="email-address">EMAIL</label>
             <input id="email-address" name="email-address" type="email">
-            <label for="phone-num">Phone Number</label>
+            <label for="phone-num">PHONE NUMBER</label>
             <input id="phone-num" name="phone-num" type="tel">
         </div>
         <div class="form-row">
-            <label for="password1">Password</label>
+            <label for="password1">PASSWORD</label>
             <input id="password1" name="password1" type="password">
-            <label for="password2">Confirm Password</label>
+            <label for="password2">CONFIRM PASSWORD</label>
             <input id="password2" name="password2" type="password">
         </div>
+    </div>
         <div class="form-button">
             <button type="submit">Create Account</button>
             <p>
