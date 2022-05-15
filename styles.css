@@ -6,7 +6,7 @@
 
 body {
     color: rgb(60, 60, 60);
-    background-color: #EAEDF0;
+    background-color: whitesmoke;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1em;
 
@@ -15,42 +15,58 @@ body {
 }
 
 .container {
-    margin-left: 330px;
+    margin-left: 15em;
 }
 
 .form-header {
-    margin-left: 60px;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 40px;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .sign-up {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .form-body {
     font-family: 'Roboto', sans-serif;
-    padding-left: 60px;
+    margin-right: auto;
+    margin-left: -2em;
+    padding-left: 30px;
     padding-bottom: 10px;
     width: 100%;
-    box-shadow: 0px 0px 2px 2px #CCC;
+    box-shadow: 2px 2px 2px 2px lightgrey;
+    
 }
 
 .lets-do-this {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding-top: 20px;
     color: rgb(60, 60, 60);
 }
 
 .form-row {
     color: #5D6063;
+    font-size: .6em;
     font-weight: bold;
-    letter-spacing: 0.1em;
-    padding: 10px 0;
-    margin:10px 0;
-  
+    letter-spacing: 0.1em; 
+}
+
+input,
+select {
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    border-radius: 0.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0..5rem 0.75rem;
 }
 
 button {
@@ -69,7 +85,6 @@ button {
     margin-left: 60px;
     cursor: pointer;
 
-    
 }
 
 button:hover {
@@ -96,12 +111,11 @@ p {
 
 .card-body{
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-.card-meerkat {
-    position: absolute;
-    max-width: 360px;
-}
+
 
 .card-logo {
     position: absolute;
@@ -111,10 +125,14 @@ p {
 }
 
 .credits {
-    position: absolute;
-    left: 80px;
-    bottom: -510px;
+    display: flex;
+    justify-content: left;
     white-space: nowrap;
     color: #CCC;
     font-size: 0.7em;
+}
+
+.card-meerkat {
+    position: fixed;
+    max-height: 100vh;
 }
