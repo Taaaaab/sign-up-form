@@ -12,18 +12,32 @@ body {
   }
 
   .form-header {
-      margin-left: 2em;
+      margin-left: 3.5em;
+      font-size: .8em;
+      padding-top: 3em;
+      padding-right: 10em;
   }
+
+  h2 {
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: -2px;
+  }
+  
   
   .form-body {
     box-sizing: border-box;
-    padding: 2rem;
     background-color: hsl(0, 0%, 100%);
-    border: 1px solid hsl(0, 0%, 90%);
+    border: 2.5px solid hsl(0, 0%, 90%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    padding-left: 3em;
+    padding-right: 6em;
+    padding-bottom: 1rem;
+    
   }
+
 
   button,
   fieldset,
@@ -53,19 +67,19 @@ input[type="email"],
 input[type="tel"],
 input[type="password"],
 select {
-  font: 1.25rem / 1.5 sans-serif;
+  font: 1rem / 1.5 sans-serif;
   display: block;
   box-sizing: border-box;
-  width: 100%;
+  width: 85%;
   padding: 0.1rem 0.1rem;
-  margin-top: 0.2rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
 }
 
 .form-row {
     display: inline-block;
-    font: bold 1rem sans-serif;
+    font: bold 0.75rem sans-serif;
     letter-spacing: 00.1rem;
-    margin-bottom: 0.1rem;
   }
 
   :focus {
@@ -75,21 +89,21 @@ select {
   }
 
   input:invalid {
-    border: 2px solid red;
+    border: 1.5px solid red;
   }
 
   .form-button {
-    margin-left: 2em;
+    margin-left: 3.5rem;
   }
 
   button {
-    font: 1.25rem sans-serif;
+    font: 1rem sans-serif;
     font-weight: bold;
     border-radius: 0.5rem;
     cursor: pointer;
-    padding: 0.75rem 3rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    padding: 0.75rem 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
   button[type="submit"] {
@@ -127,7 +141,7 @@ select {
 }
 
 .card-meerkat {
-    max-width: 550px;
+    max-width: 420px;
 }
 
 .card-heading {
@@ -147,6 +161,6 @@ select {
     font-size: 1em;
     color: rgb(217, 217, 217);
     position: absolute;
-    top: 49em;
-    left: 9em;
+    bottom: 8vh;
+    left: 5em;
 }
