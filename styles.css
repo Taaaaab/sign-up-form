@@ -135,18 +135,40 @@ select {
     max-width: 420px;
 }
 
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('myfont.woff2') format('woff2');
+}
+
 .card-heading {
-    max-width: 150px;
+    font-family: 'MyWebFont';
+    font-weight: bold;
     position: absolute;
     color: white;
+    font-size: 1.8em;
+    left: 3.5em;
+    top: 1.8em;
 }
 
 .card-logo {
-    max-width: 150px;
-    position: absolute;
-    top: 8em;
-    left: 1em;
+  max-width: 90px;
+  position: absolute;
+  top: 15.5em;
+  left: 1em;
+  z-index: 1;
 }
+
+  .card-box {
+    background-color: rgba(0,0,0,0.65);
+    position: absolute;
+    top: 15em;
+    height: 140px;
+    width: 100%;
+    font-family: sans-serif;
+    color: #FFF;
+    bottom: 0px;
+    z-index: 1;
+   }
 
 .credits {
     font-size: 1em;
