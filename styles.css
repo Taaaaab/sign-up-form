@@ -171,9 +171,9 @@ select {
    }
 
 .credits {
-    font-size: 1em;
+    font-size: 0.8em;
     color: rgb(217, 217, 217);
     position: absolute;
-    bottom: 8vh;
-    left: 5em;
+    bottom: 3vh;
+    left: 8em;
 }
