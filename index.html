@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="card-container">
@@ -24,17 +25,17 @@
         <h1>MeerkatsOverNight.com is the easiest and fastest way to get a real Meerkat.</h1> 
         <h1 class="sign-up">Sign-up now to get started.</h1>    
     </header>
-    <form action="" method="get">
+    <form id="contact" action="" method="get">
     <div class="form-body">
         <h2 class="lets-do-this">Let's do this!</h2>
         <h2></h2>
         <div class="form-row">
             <label for="first-name">FIRST NAME</label>
-            <input id="first-name" name="first-name" type="text">
+            <input id="first-name" name="first-name" type="text" required>
         </div>
         <div class="form-row">
             <label for="last-name">LAST NAME</label>
-            <input id="last-name" name="last-name" type="text">
+            <input id="last-name" name="last-name" type="text" required>
         </div>
         <div class="form-row">
             <label for="email-address">EMAIL</label>
@@ -45,17 +46,20 @@
             <input id="phone-num" name="phone-num" type="tel" required>
         </div>
         <div class="form-row">
-            <label for="password1">PASSWORD</label>
-            <input id="password1" name="password1" type="password" required>
+            <label>PASSWORD
+                <input name="password" id="password" type="password" onkeyup='check();' />
+                <span id='message'></span>
+            </label>
         </div>
         <div class="form-row">
-            <label for="password2">CONFIRM PASSWORD</label>
-            <input id="password2" name="password2" type="password" required>
+            <label>CONFIRM PASSWORD
+                <input type="password" name="confirm_password" id="confirm_password"  onkeyup='check();' /> 
+            </label>
         </div>
     </div>
         <div class="form-button">
             <button type="submit">Create Account</button>
-            <p>Already have an account? <span class="log-in">Log In</span></p> 
+            <p class="already-acct">Already have an account? <span class="log-in">Log In</span></p> 
         </div>
     </form>
 </body>
